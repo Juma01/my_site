@@ -1,0 +1,9 @@
+{% extends "jobs/base.html" %}
+{% block content %}
+<p>Добавить новую профессию:</p>
+<form action="{% url 'jobs:new_profession' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button name="submit">добавить профессию.</button>
+</form>
+{% endblock content %}

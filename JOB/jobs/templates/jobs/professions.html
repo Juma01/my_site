@@ -1,0 +1,14 @@
+{% extends "jobs/base.html" %}
+{% block content %}
+<p>Профессии:</p>
+  <ul>
+      {% for profession in professions %}
+        <li>
+          <a href="{% url 'jobs:profession' profession.id %}">{{ profession }}</a>
+        </li>
+      {% empty %}
+        <li>Профессии ещё не добавлены.</li>
+      {% endfor %}
+  </ul>
+  <a href="{% url 'jobs:new_profession' %}">Добавить новую профессию:</a>
+{% endblock content %}

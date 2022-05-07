@@ -1,0 +1,12 @@
+<p>
+    <a href="{% url 'jobs:index' %}">ALTYN KOL</a>-
+    <a href="{% url 'jobs:professions' %}">Профессии</a> -
+    {% if user.is_authenticated %}
+      Привет, {{ user.username }}.
+      <a href="{% url 'users:logout' %}">Выйти</a>
+    {% else %}
+      <a href="{% url 'users:register' %}">Зарегистрироваться</a> -
+      <a href="{% url 'users:login' %}">Авторизоваться</a>
+    {% endif %}
+</p>
+{% block content %}{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends "jobs/base.html" %}
+{% block content %}
+  <p>Профессия: {{ profession }}</p>
+  <p>Записи:</p>
+<p>
+  <a href="{% url 'jobs:new_entry' profession.id %}">добавить новую запись</a>
+</p>
+  <ul>
+    {% for entry in entries %}
+      <li>
+        <p>{{ entry.date_added|date:'M d, Y H:i' }}</p>
+        <p>{{ entry.text|linebreaks }}</p>
+        <p>
+          <a href="{% url 'jobs:edit_entry' entry.id %}">Изменить запись</a>
+        </p>
+      </li>
+    {% empty %}
+      <li>По этой профессии пока нет записей.</li>
+    {% endfor %}
+  </ul>
+{% endblock content %}
