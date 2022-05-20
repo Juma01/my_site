@@ -1,7 +1,7 @@
 {% extends "jobs/base.html" %}
 {% block content %}
 <div class="profes">
-  <p>Профессия: {{ profession }}</p>
+  <h3>Профессия: {{ profession }}</h3>
   <p>Записи:</p>
 <p>
   <a href="{% url 'jobs:new_entry' profession.id %}">добавить новую запись</a>
@@ -10,13 +10,15 @@
     {% for entry in entries %}
       <li>
         <p>{{ entry.date_added|date:'M d, Y H:i' }}</p>
-        <p>{{ entry.text|linebreaks }}</p>
+        <h3>{{ entry.text|linebreaks }}</h3>
         <p>
           <a href="{% url 'jobs:edit_entry' entry.id %}">Изменить запись</a>
         </p>
       </li>
     {% empty %}
-      <li>По этой профессии пока нет записей.</li>
+      <li>
+       <h3>По этой профессии пока записей нет.</h3>
+      </li>
     {% endfor %}
   </ul>
   <style>
