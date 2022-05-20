@@ -1,5 +1,6 @@
 {% extends "jobs/base.html" %}
 {% block content %}
+<div class="profes">
   <p>Профессия: {{ profession }}</p>
   <p>Записи:</p>
 <p>
@@ -18,4 +19,8 @@
       <li>По этой профессии пока нет записей.</li>
     {% endfor %}
   </ul>
+  <style>
+    a {text-decoration: none;}
+  </style>
+</div>
 {% endblock content %}

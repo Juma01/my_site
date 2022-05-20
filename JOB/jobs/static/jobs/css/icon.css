@@ -1,0 +1,139 @@
+body {
+    background: #dee2e6;
+}
+
+aside {
+    float: left;
+    background: #6c757d;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 120px;
+    float: left;
+}
+
+aside .Builder {
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: +50px
+}
+aside h3 {
+    margin-top: 170px;
+    font-size: 20px;
+}
+aside ul {list-style: none}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #20c997;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+jobs .logo {
+    float: left;
+    color: #6c757d;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+jobs .exit {
+    float: left;
+    color: #6c757d;
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    width: 75%;
+}
+jobs .exit p {max-width: 400px; margin: 20px auto}
+
+jobs .parol {
+    float: left;
+    color: #6c757d;
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    width: 75%;
+}
+jobs .parol p {max-width: 400px; margin: 20px auto}
+
+jobs .pro {
+    float: left;
+    color: #0d6efd;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+}
+jobs .pro p {max-width: 400px; margin: 20px auto}
+
+jobs .pro ul li {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    transition: transform .6s ease;
+}
+
+jobs .pro ul li:hover, jobs .pro ul li a:hover {
+    color: #eb5959;
+    transform: scale(1.05);
+}
+jobs .pro ul {list-style: none}
+
+jobs .profes {
+    float: left;
+    color: #6c757d;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+}
+jobs .profes p {max-width: 400px; margin: 20px auto}
+jobs .profes ul {list-style: none}
+jobs .profes p a:hover, jobs .profes p li:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+jobs .newz {
+    float: left;
+    color: #6c757d;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+}
+
+jobs .chench {
+    float: left;
+    color: #6c757d;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+}
+
+jobs .regis {
+    float: left;
+    color: #6c757d;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+    font-weight: bold;
+}
+jobs .regis ul {list-style: none}

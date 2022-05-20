@@ -1,5 +1,6 @@
 {% extends 'jobs/base.html' %}
 {% block content %}
+<div class="newz">
   <p><a href="{% url 'jobs:profession' profession.id %}">{{ profession }}</a></p>
   <p>Добавить новую запись:</p>
   <form action="{% url 'jobs:new_entry' profession.id %}" method='post'>
@@ -7,4 +8,9 @@
     {{ form.as_p }}
     <button name="submit">добавить запись</button>
   </form>
+  <style>
+    a {
+    text-decoration: none;}
+  </style>
+</div>
 {% endblock content %}

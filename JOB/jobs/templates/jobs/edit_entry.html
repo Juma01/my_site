@@ -1,5 +1,6 @@
 {% extends 'jobs/base.html' %}
 {% block content %}
+<div class="chench">
 <p><a href="{% url 'jobs:profession' profession.id %}">{{ profession }}</a></p>
 <p>Изменить запись:</p>
 <form action="{% url 'jobs:edit_entry' entry.id %}" method='post'>
@@ -7,4 +8,9 @@
   {{ form.as_p }}
   <button name="submit">сохранить изменения</button>
 </form>
+  <style>
+    a {
+    text-decoration: none;}
+  </style>
+</div>
 {% endblock content %}
